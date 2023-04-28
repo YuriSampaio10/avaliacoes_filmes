@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Notas</h1>
+
+    <h2>selecione o filme abaixo para dar a nota</h2>
+
+    <label for="filmes">Filmes</label>
+    <select id="filmes" name="filmes">
+        <option value="Matrix">Matrix</option>
+        <option value="Star Wars">Star Wars</option>
+        <option value="Harry Potter">Harry Potter</option>
+        <option value="Jurassic Park">Jurassic Park</option>
+        <option value="Indiana Jones">Indiana Jones</option>
+    </select>
+
+    <input id="nota" type="number" placeholder="Digite sua nota para o fime selecionado" min="1" max="10">
+
+    <button id="buttonAdiciona" onclick="adicionarNota()">Adicionar Nota</button>
+
+    <br>
+
+    <h1>Media das Notas</h1>
+    <h2>Selecione o filme para ver a media das notas</h2>
+    <label for="filmes">Filmes</label>
+    <select id="filmesMedia" name="filmes">
+        <option value="Matrix">Matrix</option>
+        <option value="Star Wars">Star Wars</option>
+        <option value="Harry Potter">Harry Potter</option>
+        <option value="Jurassic Park">Jurassic Park</option>
+        <option value="Indiana Jones">Indiana Jones</option>
+    </select>
+
+    <button id="buttonMedia" onclick="calcularMedia()">Verificar a média</button>
+
+    <button id="buttonNotasDadas" onclick="NotasDadas()">Notas dadas para esse filme</button>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
